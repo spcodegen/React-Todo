@@ -1,9 +1,12 @@
+import styles from "./inlinecomponent.module.css";
 import React from "react";
 
-const fontstyle = { color: "gray", fontSize: "52px" };
-
 function InlineComponent() {
-  return <div style={fontstyle}>InlineComponent</div>;
+  return (
+    <div>
+      <h2 className={styles.header}>Inline Component</h2>
+    </div>
+  );
 }
 
 export default InlineComponent;
